@@ -1,20 +1,14 @@
-PImage start1,start2,img1,img2,enemy,fighter,hp,treasure,end1,end2;
-int g1,g2,fx,fy,ex,ey,tx,ty,lift,gameState,boo;
-final int GAMESTART=0,GAMERUN=1,GAMELOSE=2;
-boolean up=false,down=false,left=false,right=false;
+PImage img1,img2,enemy,fighter,hp,treasure;
+int g1,g2,fx,fy,ex,ey,tx,ty,lift,boo;
 void setup () 
 {
   size(640,480);
-  start1=loadImage("img/start1.png");
-  start2=loadImage("img/start2.png");
   img1=loadImage("img/bg1.png");
   img2=loadImage("img/bg2.png");
   enemy=loadImage("img/enemy.png");
   fighter=loadImage("img/fighter.png");
   hp=loadImage("img/hp.png");
   treasure=loadImage("img/treasure.png"); 
-  end1=loadImage("img/end1.png");
-  end2=loadImage("img/end2.png");
   g1=0;
   g2=640;
   fx=width-50; 
